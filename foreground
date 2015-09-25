@@ -1,0 +1,3 @@
+#!/bin/bash
+
+sudo docker run --rm --name humhub -p 8443:443 --cidfile ./cid.txt $(cat ./name.txt)

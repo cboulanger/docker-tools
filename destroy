@@ -1,0 +1,5 @@
+#!/bin/bash
+
+sudo docker stop $(cat ./cid.txt) && \
+  sudo docker rm $(cat ./cid.txt) && \
+    rm -f ./cid.txt

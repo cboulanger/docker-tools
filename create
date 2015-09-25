@@ -1,0 +1,4 @@
+#!/bin/bash
+
+sudo docker run -d -p 443:443 -p 80:80 -p 12320-12322:12320-12322 --cidfile ./cid.txt $(cat ./name.txt)
+sudo docker inspect $(cat ./name.txt) | grep IPAddress
